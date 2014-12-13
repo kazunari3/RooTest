@@ -15,4 +15,12 @@ privileged aspect Timer_Roo_JavaBean {
         this.message = message;
     }
     
+    public Boolean Timer.getBuy() {
+        return this.buy;
+    }
+    
+    public void Timer.setBuy(Boolean buy) {
+        this.buy = buy;
+    }
+    
 }

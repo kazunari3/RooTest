@@ -13,4 +13,8 @@ public class Timer {
      */
     @NotNull
     private String message;
+
+    /**
+     */
+    private Boolean buy;
 }

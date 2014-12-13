@@ -10,3 +10,5 @@ project --topLevelPackage rootest.org.com --projectName RooTest --java 6 --packa
  web mvc all --package ~.web
  selenium test --controller ~.web.TimerController
 security setup
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2014-12-13 21:50:54
+field boolean --fieldName buy --class ~.domain.Timer

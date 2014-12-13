@@ -9,3 +9,4 @@ project --topLevelPackage rootest.org.com --projectName RooTest --java 6 --packa
  web mvc setup
  web mvc all --package ~.web
  selenium test --controller ~.web.TimerController
+security setup

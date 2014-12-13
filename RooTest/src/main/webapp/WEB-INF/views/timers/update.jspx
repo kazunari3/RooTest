@@ -4,5 +4,6 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_rootest_org_com_domain_Timer" modelAttribute="timer" path="/timers" versionField="Version" z="QgroTyVcURDUpI30oVBna7g8kr4=">
         <field:input field="message" id="c_rootest_org_com_domain_Timer_message" required="true" z="OXlYLHmh/L1H/GvZMG0wGt2iT3A="/>
+        <field:checkbox field="buy" id="c_rootest_org_com_domain_Timer_buy" z="W9MSBK9NffhsCg1dAmonxPLpUC4="/>
     </form:update>
 </div>

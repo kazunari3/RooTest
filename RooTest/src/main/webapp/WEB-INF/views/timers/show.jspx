@@ -4,5 +4,6 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_rootest_org_com_domain_Timer" object="${timer}" path="/timers" z="/G4P0iiXW2R2v694zo/qNy9KLcI=">
         <field:display field="message" id="s_rootest_org_com_domain_Timer_message" object="${timer}" z="Z+eJP3EUnA+WPSS6rsQnX8WHwfQ="/>
+        <field:display field="buy" id="s_rootest_org_com_domain_Timer_buy" object="${timer}" z="Luf8XVEIgsBoOHApFXMl+fvDTHw="/>
     </page:show>
 </div>

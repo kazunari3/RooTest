@@ -12,6 +12,8 @@
   <jsp:directive.attribute name="render" type="java.lang.Boolean" required="false" rtexprvalue="true" description="Indicate if the contents of this tag and all enclosed tags should be rendered (default 'true')" />
   <jsp:directive.attribute name="z" type="java.lang.String" required="false" description="Used for checking if element has been modified (to recalculate simply provide empty string value)" />
 
+  <form:form method="post" action="/sample/update">
+
   <c:if test="${empty render or render}">
 
     <c:set var="columnProperties" scope="request" />
@@ -156,7 +158,8 @@
             <td class="utilbox">
               <spring:url value="${path}/${itemId}" var="delete_form_url" />
               <spring:url value="/resources/images/delete.png" var="delete_image_url" />
-              <form:form action="${delete_form_url}" method="DELETE">
+<!-- formの入れ子は不可、という意味もありコメントアウト
+             <form:form action="${delete_form_url}" method="DELETE">
                 <spring:message arguments="${typeName}" code="entity_delete" var="delete_label" htmlEscape="false" />
                 <c:set var="delete_confirm_msg">
                   <spring:escapeBody javaScriptEscape="true">
@@ -171,6 +174,10 @@
                   <input name="size" type="hidden" value="${fn:escapeXml(param.size)}" />
                 </c:if>
               </form:form>
+-->
+<!-- チェックボックス -->
+<input type="checkbox" name="example${itemId}" value="aa" />
+
             </td>
           </c:if>
         </tr>
@@ -198,5 +205,8 @@
     </table>
 
   </c:if>
+
+ <input type="submit" value="送信する" />
+ </form:form>
 
 </jsp:root>

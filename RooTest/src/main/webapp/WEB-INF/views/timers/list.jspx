@@ -5,7 +5,8 @@
     <page:list id="pl_rootest_org_com_domain_Timer" items="${timers}" z="tD1NZzWGuOEbu8CbMDWtFqd6m5c=">
         <table:table data="${timers}" id="l_rootest_org_com_domain_Timer" path="/timers" z="hAKWshvmtRUgFH6pyvznAyYvUrM=">
             <table:column id="c_rootest_org_com_domain_Timer_message" property="message" z="h/uHXufw8YjsmC+qHPhxCY0MzZ0="/>
-            <table:column id="c_rootest_org_com_domain_Timer_buy" property="buy" z="I22SVtuq8n/nxjC+cCmBw3ieHuU="/>
+            <table:column id="c_rootest_org_com_domain_Timer_buy" label="true" property="buy" z="user-managed"/>
+            <table:column date="true" dateTimePattern="${timer_dd_date_format}" id="c_rootest_org_com_domain_Timer_dd" property="dd" z="QBPIIUTe5rSqLAtHuQbEPpgnsww="/>
         </table:table>
     </page:list>
 </div>

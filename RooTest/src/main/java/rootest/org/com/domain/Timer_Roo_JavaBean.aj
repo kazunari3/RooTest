@@ -3,6 +3,7 @@
 
 package rootest.org.com.domain;
 
+import java.util.Date;
 import rootest.org.com.domain.Timer;
 
 privileged aspect Timer_Roo_JavaBean {
@@ -21,6 +22,14 @@ privileged aspect Timer_Roo_JavaBean {
     
     public void Timer.setBuy(Boolean buy) {
         this.buy = buy;
+    }
+    
+    public Date Timer.getDd() {
+        return this.dd;
+    }
+    
+    public void Timer.setDd(Date dd) {
+        this.dd = dd;
     }
     
 }

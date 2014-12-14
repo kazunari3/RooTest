@@ -14,7 +14,7 @@ privileged aspect Timer_Roo_Jpa_ActiveRecord {
     @PersistenceContext
     transient EntityManager Timer.entityManager;
     
-    public static final List<String> Timer.fieldNames4OrderClauseFilter = java.util.Arrays.asList("message", "buy");
+    public static final List<String> Timer.fieldNames4OrderClauseFilter = java.util.Arrays.asList("message", "buy", "dd");
     
     public static final EntityManager Timer.entityManager() {
         EntityManager em = new Timer().entityManager;

@@ -17,3 +17,5 @@ hint field
 hint web mvc
 hint field
 web mvc all --package ~.web
+field date --fieldName dd --type java.util.Date --class ~.domain.Timer
+web mvc all --package ~.web
